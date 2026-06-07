@@ -20,9 +20,9 @@
     </header>
 
     <main>
-      <section class="casefile-hero">
+      <section class="casefile-hero simple-project-hero">
         <div>
-          <p class="option-kicker">Option 1 / Case File</p>
+          <p class="option-kicker">Option 1 / Simple Project Page</p>
           <h1 class="option-title">Pathfinding Autonomous Vehicle</h1>
           <p class="option-copy">
             Electrical architecture, power distribution, motor-driver wiring,
@@ -36,57 +36,44 @@
             <span>MATLAB / Simulink</span>
           </div>
         </div>
-        <figure class="casefile-media">
-          <img src="../assets/pavbot-field.jpg" alt="PAVBOT outside an engineering building">
-          <figcaption class="option-caption">
-            Finished vehicle platform with electronics mounted under the upper deck.
-          </figcaption>
-        </figure>
       </section>
 
-      <section class="casefile-body">
-        <aside class="casefile-spec">
-          <div><b>Role</b><span>Electrical subsystem integration</span></div>
-          <div><b>Platform</b><span>Motorized wheelchair base</span></div>
-          <div><b>Focus</b><span>Power, controls, safety, handoff docs</span></div>
-          <div><b>Artifacts</b><span>Wiring maps, simulation plots, driver setup</span></div>
-        </aside>
-
+      <section class="casefile-body simple-project-body">
         <div>
           <section class="casefile-section">
-            <p class="option-kicker">01 / Engineering Thread</p>
-            <h2 class="option-title">The electrical path from battery to motion.</h2>
+            <p class="option-kicker">My Work</p>
+            <h2 class="option-title">Electrical integration and bring-up.</h2>
+            <ul class="simple-facts">
+              <li><b>Role:</b> electrical subsystem integration</li>
+              <li><b>Focus:</b> power distribution, motor control, e-stop wiring, validation</li>
+              <li><b>Artifacts:</b> wiring maps, MATLAB plots, motor-driver setup, project paper</li>
+            </ul>
             <p class="option-copy">
-              The page follows the same order the work followed: define the
-              system risk, build the electrical path, verify behavior, then show
-              the documentation that made the robot supportable.
+              I designed and integrated the electrical subsystems supporting
+              vehicle mobility and control, including battery power distribution,
+              motor-driver interfaces, emergency-stop circuitry, and communication
+              paths between the compute platform, controller, and drive hardware.
             </p>
-            <ol class="casefile-flow">
-              <li><b>Need</b><span>The robot needed reliable power, motor control, and a stop path before autonomy mattered.</span></li>
-              <li><b>Build</b><span>I integrated the battery feed, step-down rails, motor drivers, relay logic, and Teensy control path.</span></li>
-              <li><b>Verify</b><span>MATLAB plots and bench checks were used to compare expected current, voltage, speed, and e-stop behavior.</span></li>
-              <li><b>Handoff</b><span>The wiring maps and driver references explain exactly how someone else can debug or rebuild the system.</span></li>
-            </ol>
           </section>
 
           <section class="casefile-section">
-            <p class="option-kicker">02 / Evidence In Order</p>
+            <p class="option-kicker">Photos</p>
             <div class="casefile-gallery">
               <figure>
+                <img src="../assets/pavbot-field.jpg" alt="PAVBOT outside an engineering building">
+                <figcaption class="option-caption">Full vehicle platform. My work focused on the electrical system under the upper deck.</figcaption>
+              </figure>
+              <figure>
                 <img src="../assets/pavbot-matlab-simulation.jpg" alt="MATLAB fault-response simulation">
-                <figcaption class="option-caption">First: predicted electrical behavior across startup, cruise, stall, and e-stop cases.</figcaption>
+                <figcaption class="option-caption">MATLAB simulation for current draw, battery voltage, speed, and motor power.</figcaption>
               </figure>
               <figure>
                 <img src="../assets/pavbot-power-screenshot.jpg" alt="PAVBOT power diagram">
-                <figcaption class="option-caption">Next: the power/control reference connecting the battery, rails, controller, relays, and e-stop.</figcaption>
+                <figcaption class="option-caption">Power and control reference for battery feed, rails, controller, relays, and e-stop.</figcaption>
               </figure>
               <figure>
                 <img src="../assets/pavbot-wiring-diagram.jpg" alt="Detailed wiring diagram">
-                <figcaption class="option-caption">Then: detailed wiring used during bring-up and troubleshooting.</figcaption>
-              </figure>
-              <figure>
-                <img src="../assets/pavbot-motor-driver.jpg" alt="Motor driver reference">
-                <figcaption class="option-caption">Finally: driver setup details that prevent hardware mistakes from being mistaken for software bugs.</figcaption>
+                <figcaption class="option-caption">Detailed wiring map used during troubleshooting.</figcaption>
               </figure>
             </div>
           </section>

@@ -25,49 +25,35 @@
     </header>
 
     <main class="case-page">
-      <section class="case-hero case-hero-grid">
-        <div class="case-hero-copy">
-          <a class="back-link" href="../index.html#work">Back to projects</a>
-          <p class="eyebrow">RF + Electromagnetics</p>
-          <h1>UHF RF Power Amplifier</h1>
-          <p>
-            Design, simulation, fabrication, and bench testing of a 400-500 MHz
-            UHF RF power amplifier using a PD55003 LDMOS transistor.
-          </p>
-          <div class="tag-row">
-            <span>PD55003 LDMOS</span>
-            <span>400-500 MHz</span>
-            <span>VNA</span>
-            <span>Smith Charts</span>
-            <span>Qucs</span>
-            <span>Impedance Matching</span>
-          </div>
+      <section class="case-hero">
+        <a class="back-link" href="../index.html#work">Back to projects</a>
+        <p class="eyebrow">RF + Electromagnetics</p>
+        <h1>UHF RF Power Amplifier</h1>
+        <p>
+          Design, simulation, fabrication, and bench testing of a 400-500 MHz
+          UHF RF power amplifier using a PD55003 LDMOS transistor.
+        </p>
+        <div class="tag-row">
+          <span>PD55003 LDMOS</span>
+          <span>400-500 MHz</span>
+          <span>VNA</span>
+          <span>Smith Charts</span>
+          <span>Qucs</span>
+          <span>Impedance Matching</span>
         </div>
-        <figure class="case-hero-media">
-          <img src="../assets/rf-measurement-bench.jpg" alt="RF power amplifier board connected to a spectrum analyzer on the lab bench">
-          <figcaption>
-            Bench measurement setup used to compare amplifier behavior against
-            simulated gain and linearity expectations.
-          </figcaption>
-        </figure>
       </section>
 
-      <section class="case-section case-overview">
-        <aside class="case-spec" aria-label="Project details">
-          <div><b>Role</b><span>RF design, layout, measurement, analysis</span></div>
-          <div><b>Device</b><span>PD55003 LDMOS power transistor</span></div>
-          <div><b>Focus</b><span>Matching, microstrip, S-parameters, OIP3</span></div>
-          <div><b>Evidence</b><span>Lab report, schematic, Smith chart, measured prototype</span></div>
-        </aside>
-        <div class="case-copy">
+      <section class="case-section">
+        <div>
           <p class="eyebrow">My work</p>
-          <h2>From simulated amplifier behavior to measured hardware.</h2>
-          <ol class="case-flow">
-            <li><b>Need</b><span>Meet a UHF gain target while keeping the amplifier matched to 50 ohm RF equipment.</span></li>
-            <li><b>Design</b><span>Build the PD55003 common-source stage, microstrip lines, and matching network in simulation.</span></li>
-            <li><b>Measure</b><span>Use the physical board, VNA, spectrum analyzer, and two-tone test to check gain, match, and linearity.</span></li>
-            <li><b>Compare</b><span>Use the lab report, plots, and prototype photos to connect simulated behavior to measured hardware.</span></li>
-          </ol>
+          <h2>RF design, layout, and measurement.</h2>
+        </div>
+        <div class="case-copy">
+          <ul class="case-facts">
+            <li><b>Role:</b> RF design, PCB layout, measurement, and analysis</li>
+            <li><b>Focus:</b> impedance matching, microstrip, S-parameters, OIP3</li>
+            <li><b>Artifacts:</b> lab report, schematic, Smith chart, measured prototype</li>
+          </ul>
           <p>
             I designed a single-stage common-source RF amplifier around the
             PD55003 LDMOS device. The input and output were built around 50 ohm
@@ -103,36 +89,31 @@
           <figure>
             <img src="../assets/rf-measurement-bench.jpg" alt="RF power amplifier board connected to a spectrum analyzer on the lab bench">
             <figcaption>
-              Measurement context: the UHF power amplifier connected to lab RF
-              equipment for gain and two-tone linearity checks.
+              Bench setup for gain and two-tone linearity checks.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/rf-schematic.jpg" alt="RF circuit schematic with matching and resonant components">
             <figcaption>
-              Design step: schematic capture showing the component-level RF
-              circuit used before layout and measurement.
+              RF schematic used before layout and measurement.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/rf-smith.jpg" alt="Smith chart measurement plots for RF design work">
             <figcaption>
-              Matching step: Smith chart analysis used to interpret impedance
-              behavior and compare response against the design target.
+              Smith chart analysis for impedance matching.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/rf-render.jpg" alt="Rendered RF PCB assembly">
             <figcaption>
-              Layout step: PCB render showing board form factor, connector
-              positions, and RF component placement.
+              PCB render showing component placement and connector positions.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/rf-prototype.jpg" alt="Physical RF prototype board with coax leads">
             <figcaption>
-              Hardware result: physical RF prototype with coax connections,
-              where layout choices become measurable amplifier behavior.
+              Physical RF prototype with coax connections.
             </figcaption>
           </figure>
         </div>

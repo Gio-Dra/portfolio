@@ -373,19 +373,6 @@ h3 {
   max-width: 1120px;
 }
 
-.case-hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.62fr);
-  gap: clamp(28px, 5vw, 64px);
-  align-items: end;
-  max-width: none;
-  border-bottom: 2px solid var(--line-strong);
-}
-
-.case-hero-copy {
-  max-width: 820px;
-}
-
 .case-hero h1 {
   max-width: 950px;
 }
@@ -394,34 +381,6 @@ h3 {
   max-width: 780px;
   color: var(--muted);
   font-size: 1rem;
-}
-
-.case-hero-media,
-.case-spec {
-  border: 2px solid var(--line-strong);
-  border-radius: 2px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-
-.case-hero-media {
-  margin: 0;
-}
-
-.case-hero-media img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-bottom: 1px solid var(--line-strong);
-}
-
-.case-hero-media figcaption {
-  padding: 12px 14px 14px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.76rem;
-  line-height: 1.5;
 }
 
 .back-link {
@@ -449,71 +408,6 @@ h3 {
   font-size: clamp(1.8rem, 3.2vw, 3rem);
 }
 
-.case-overview {
-  align-items: start;
-}
-
-.case-spec {
-  display: grid;
-  align-self: start;
-  gap: 0;
-  padding: 0;
-}
-
-.case-spec div {
-  display: grid;
-  gap: 4px;
-  padding: 16px;
-  border-bottom: 1px solid var(--line);
-}
-
-.case-spec div:last-child {
-  border-bottom: 0;
-}
-
-.case-spec b {
-  font-family: var(--mono);
-  font-size: 0.76rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.case-spec span {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.case-flow {
-  display: grid;
-  gap: 10px;
-  margin: 4px 0 8px;
-  padding: 0;
-  list-style: none;
-}
-
-.case-flow li {
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 14px;
-  padding: 12px 0;
-  border-top: 1px solid var(--line);
-}
-
-.case-flow li:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
-.case-flow b {
-  color: var(--accent);
-  font-family: var(--mono);
-  font-size: 0.76rem;
-  text-transform: uppercase;
-}
-
-.case-flow span {
-  color: var(--muted);
-}
-
 .case-copy {
   display: grid;
   gap: 16px;
@@ -524,6 +418,24 @@ h3 {
   margin: 0;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.case-facts {
+  display: grid;
+  gap: 8px;
+  margin: 2px 0 8px;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.case-facts li {
+  padding-left: 14px;
+  border-left: 3px solid var(--accent);
+}
+
+.case-facts b {
+  color: var(--text);
 }
 
 .inline-button {
@@ -718,8 +630,7 @@ h3 {
   .hero,
   .split-section,
   .contact-section,
-  .case-section,
-  .case-hero-grid {
+  .case-section {
     grid-template-columns: 1fr;
   }
 
@@ -764,11 +675,6 @@ h3 {
 
   .metric-grid {
     grid-template-columns: 1fr;
-  }
-
-  .case-flow li {
-    grid-template-columns: 1fr;
-    gap: 4px;
   }
 
   .site-footer {

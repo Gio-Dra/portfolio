@@ -177,6 +177,34 @@ img {
   padding: clamp(38px, 6vw, 78px) clamp(18px, 5vw, 64px);
 }
 
+.simple-project-hero {
+  display: block;
+  max-width: 1060px;
+}
+
+.simple-project-body {
+  display: block;
+  max-width: 1060px;
+}
+
+.simple-facts {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.simple-facts li {
+  padding-left: 14px;
+  border-left: 3px solid var(--accent);
+}
+
+.simple-facts b {
+  color: var(--ink);
+}
+
 .casefile-spec {
   position: sticky;
   top: 90px;
