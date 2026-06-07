@@ -66,18 +66,13 @@ button {
   letter-spacing: 0.01em;
 }
 
-.brand-mark {
-  display: inline-grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
+.brand-photo {
+  display: block;
+  width: 42px;
+  height: 42px;
   border: 2px solid var(--line-strong);
   border-radius: 2px;
-  background: var(--text);
-  color: #fff;
-  font-family: var(--mono);
-  font-size: 0.86rem;
-  letter-spacing: 0;
+  object-fit: cover;
 }
 
 .nav {
@@ -213,34 +208,6 @@ h3 {
   border: 1px solid var(--line-strong);
   border-radius: 1px;
   object-fit: cover;
-}
-
-.profile-card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 12px 0 2px;
-  border-top: 1px solid var(--line);
-  background: transparent;
-}
-
-.portrait {
-  width: 78px;
-  height: 78px;
-  flex: 0 0 auto;
-  border: 1px solid var(--line-strong);
-  border-radius: 1px;
-  object-fit: cover;
-}
-
-.profile-name {
-  margin: 0;
-  font-weight: 800;
-}
-
-.profile-role {
-  margin: 4px 0 0;
-  color: var(--muted);
 }
 
 .metric-grid {
