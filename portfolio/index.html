@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gianni Dragos | Online Portfolio</title>
+    <meta
+      name="description"
+      content="Electrical engineering portfolio for Gianni Dragos, featuring embedded systems, PCB design, RF projects, autonomous robotics, and hardware diagnostics."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">GD</span>
+        <span>Gianni Dragos</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button button-small" href="assets/GianniDragosResume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Electrical engineering portfolio</p>
+          <h1>Embedded systems, PCB design, and hardware debugging.</h1>
+          <p class="hero-text">
+            I am an Embry-Riddle Aeronautical University electrical engineering
+            graduate focused on embedded systems, analog and digital circuits,
+            board bring-up, and practical test work that moves designs from
+            schematic to working hardware.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button" href="#work">View Projects</a>
+            <a class="button button-muted" href="mailto:DragosGianni@proton.me">Email Me</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Portfolio snapshot">
+          <img
+            class="hero-image"
+            src="assets/hero-professional.jpg"
+            alt="Gianni seated at an electronics lab bench with test equipment"
+          >
+          <div class="profile-card">
+            <img
+              class="portrait"
+              src="assets/portrait-professional.jpg"
+              alt="Portrait of Gianni Dragos outside an engineering building"
+            >
+            <div>
+              <p class="profile-name">Gianni Dragos</p>
+              <p class="profile-role">Electrical Engineer</p>
+            </div>
+          </div>
+          <div class="metric-grid" aria-label="Highlights">
+            <div>
+              <strong>B.S.</strong>
+              <span>Electrical Engineering</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>Featured Projects</span>
+            </div>
+            <div>
+              <strong>PCB</strong>
+              <span>Design + Bring-Up</span>
+            </div>
+          </div>
+          <div class="availability">
+            <span class="status-dot"></span>
+            Open to engineering internships and hardware roles
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Hardware projects with real test context.</h2>
+          <p>
+            These projects span autonomous robotics, RF design, PCB layout,
+            documentation, firmware interfaces, and electromechanical prototyping.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              class="project-preview"
+              src="assets/pavbot.jpg"
+              alt="Pathfinding autonomous vehicle platform outside an engineering building"
+            >
+            <div class="project-body">
+              <p class="project-type">Senior Capstone</p>
+              <h3>Pathfinding Autonomous Vehicle</h3>
+              <p>
+                My electrical work on PAVBOT: power distribution, motor-driver
+                wiring, e-stop control, and subsystem bring-up on an autonomous
+                wheelchair-base robot.
+              </p>
+              <div class="tag-row">
+                <span>Power Distribution</span>
+                <span>Motor Drivers</span>
+                <span>E-Stop</span>
+                <span>MATLAB</span>
+              </div>
+              <div class="project-links">
+                <a href="projects/pavbot.html">Read more</a>
+                <a href="assets/pavbot-paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-preview"
+              src="assets/rf-board.jpg"
+              alt="RF communications PCB render with capacitors, inductors, and trace layout"
+            >
+            <div class="project-body">
+              <p class="project-type">RF + Electromagnetics</p>
+              <h3>UHF RF Power Amplifier</h3>
+              <p>
+                400-500 MHz RF power amplifier using a PD55003 LDMOS transistor,
+                Qucs simulation, 50 ohm microstrip layout, VNA measurements,
+                and two-tone linearity testing.
+              </p>
+              <div class="tag-row">
+                <span>VNA</span>
+                <span>Smith Charts</span>
+                <span>PCB Layout</span>
+                <span>RF Design</span>
+              </div>
+              <div class="project-links">
+                <a href="projects/rf-design.html">Read more</a>
+                <a href="assets/ee412-uhf-power-amp.pdf" target="_blank" rel="noreferrer">Lab report</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-preview"
+              src="assets/miodac-board.jpg"
+              alt="MIO-DAC20 circuit board render with connectors and repeated analog output stages"
+            >
+            <div class="project-body">
+              <p class="project-type">Electronics Design Internship</p>
+              <h3>MIO-DAC20 Board + Manual</h3>
+              <p>
+                Supported DAC hardware documentation and design workflow,
+                including Altium schematic cleanup, PCB review, REST/UDP
+                interface documentation, and board-level validation.
+              </p>
+              <div class="tag-row">
+                <span>Altium</span>
+                <span>DAC</span>
+                <span>REST API</span>
+                <span>UDP</span>
+              </div>
+              <div class="project-links">
+                <a href="projects/miodac.html">Read more</a>
+                <a href="assets/miodac-user-manual.pdf" target="_blank" rel="noreferrer">Manual</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-preview"
+              src="assets/luminosity-probe.jpg"
+              alt="Exploded CAD view and assembled probe for a luminosity lab project"
+            >
+            <div class="project-body">
+              <p class="project-type">Instrumentation</p>
+              <h3>Luminosity Lab Probe</h3>
+              <p>
+                VELOS lunar probe concept combining CAD, sensor packaging,
+                embedded electronics, prototype assembly, and mission-style
+                testing for lunar permanently shadowed regions.
+              </p>
+              <div class="tag-row">
+                <span>CAD</span>
+                <span>Prototyping</span>
+                <span>Instrumentation</span>
+                <span>Testing</span>
+              </div>
+              <div class="project-links">
+                <a href="projects/velos.html">Read more</a>
+                <a href="https://bigidea.nianet.org/wp-content/uploads/2020-BIG-Idea-Technical-Paper_ASU.pdf" target="_blank" rel="noreferrer">Read technical paper</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>I like the part where analysis has to become working hardware.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            My background combines electrical failure analysis, analog circuit
+            validation, PCB design, system integration, and technical documentation.
+            I graduated from Embry-Riddle Aeronautical University with a B.S. in
+            Electrical Engineering and have worked with automotive CAN/LIN
+            diagnostics, aerospace hardware documentation, high-current autonomous
+            vehicle subsystems, and RF lab work.
+          </p>
+          <div class="skills" aria-label="Skills">
+            <span>C / C++</span>
+            <span>Python</span>
+            <span>MATLAB / Simulink</span>
+            <span>Embedded Systems</span>
+            <span>PCB Design</span>
+            <span>Analog Circuits</span>
+            <span>Digital Circuits</span>
+            <span>Hardware Debugging</span>
+            <span>Signal Validation</span>
+            <span>Technical Documentation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk engineering.</h2>
+          <p>
+            I am based in Prescott, Arizona and interested in roles involving
+            embedded systems, board-level hardware, validation, and failure analysis.
+          </p>
+        </div>
+        <form class="contact-form" action="mailto:DragosGianni@proton.me" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button class="button" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Gianni Dragos. All rights reserved.</p>
+      <div class="social-links" aria-label="Social links">
+        <a href="assets/GianniDragosResume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="https://www.linkedin.com/in/gianni-dragos/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:DragosGianni@proton.me">Email</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
