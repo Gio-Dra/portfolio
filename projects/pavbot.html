@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAVBOT | Gianni Dragos</title>
+    <meta
+      name="description"
+      content="Pathfinding autonomous vehicle project by Gianni Dragos, focused on power distribution, motor-driver wiring, e-stop control, MATLAB analysis, and electrical bring-up."
+    >
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#home" aria-label="Go to home">
+        <span class="brand-mark">GD</span>
+        <span>Gianni Dragos</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <a class="button button-small" href="../assets/GianniDragosResume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </header>
+
+    <main class="case-page">
+      <section class="case-hero">
+        <a class="back-link" href="../index.html#work">Back to projects</a>
+        <p class="eyebrow">Senior Capstone</p>
+        <h1>Pathfinding Autonomous Vehicle</h1>
+        <p>
+          PAVBOT was our autonomous vehicle capstone. My part was the electrical
+          work: power distribution, motor-driver wiring, e-stop control, MATLAB
+          analysis, and the bring-up work needed to make the robot move
+          reliably without risking hardware.
+        </p>
+        <div class="tag-row">
+          <span>Power Distribution</span>
+          <span>Motor Drivers</span>
+          <span>E-Stop</span>
+          <span>MATLAB / Simulink</span>
+          <span>Hardware Validation</span>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div>
+          <p class="eyebrow">My work</p>
+          <h2>The electrical side of the robot.</h2>
+        </div>
+        <div class="case-copy">
+          <p>
+            I worked on the power path from the batteries to the motor drivers,
+            the control wiring around the e-stop system, and the electrical
+            interfaces between the compute stack, Teensy motor controller, and
+            drive hardware.
+          </p>
+          <p>
+            I used MATLAB/Simulink to reason about motor-drive and power behavior,
+            then tied that analysis back to the real vehicle: wire paths, relays,
+            DC conversion, current draw, failure points, and startup checks.
+          </p>
+          <p>
+            I wanted the electrical side to be understandable during handoff:
+            how to power it up, how to check the relays and drivers, how to stop
+            it safely, and where to look first when something failed.
+          </p>
+          <div class="button-row">
+            <a class="button button-muted inline-button" href="../assets/pavbot-paper.pdf" target="_blank" rel="noreferrer">Open project paper</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div>
+          <p class="eyebrow">Photos</p>
+          <h2>Build and electrical context.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="../assets/pavbot-field.jpg" alt="PAVBOT autonomous vehicle platform outside an engineering building">
+            <figcaption>
+              The full vehicle. Under the upper deck is my main project scope:
+              batteries, wiring, relays, motor drivers, and power conversion
+              feeding the wheelchair-base drive system.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-demo-thumb.jpg" alt="PAVBOT testing setup with a laptop and tabletop equipment">
+            <figcaption>
+              Bench-side bring-up. This is where control and power behavior were
+              checked before trusting the vehicle in a field test.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-power-screenshot.jpg" alt="PAVBOT power and control wiring diagram">
+            <figcaption>
+              My power/control reference: 24 V battery feed, step-down rails,
+              Jetson supply, Teensy motor controller, motor drivers, relays, and
+              e-stop control path.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div>
+          <p class="eyebrow">Electrical details</p>
+          <h2>The pieces I documented for handoff.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="../assets/pavbot-friendly-wiring.jpg" alt="PAVBOT friendly e-stop wiring diagram">
+            <figcaption>
+              Simplified e-stop wiring. The important idea is that motor power
+              only closes when the local and remote stop paths are in the right
+              state.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-wiring-diagram.jpg" alt="Detailed PAVBOT wiring diagram">
+            <figcaption>
+              Detailed wiring map. I used this to keep the 24 V battery feed,
+              low-voltage rails, Teensy control, and motor-driver wiring straight.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-motor-driver.jpg" alt="PAVBOT motor driver DIP switch and wiring reference">
+            <figcaption>
+              Motor driver wiring and DIP-switch reference. This mattered during
+              bring-up because a wrong setting or crossed line can look like a
+              software bug.
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-pwm-logic.jpg" alt="PAVBOT PWM and logic analyzer control timing">
+            <figcaption>
+              PWM/control timing reference. This was useful for checking whether
+              the Teensy was sending sane motor commands to the drive hardware.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
