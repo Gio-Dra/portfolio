@@ -557,9 +557,9 @@ h3 {
   align-items: start;
 }
 
-.contact-form {
+.contact-card {
   display: grid;
-  gap: 14px;
+  gap: 18px;
   padding: 18px;
   border: 2px solid var(--line-strong);
   border-radius: 2px;
@@ -567,30 +567,41 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.contact-form label {
-  display: grid;
-  gap: 7px;
-  color: var(--muted);
+.contact-label {
+  margin: 0 0 6px;
+  color: var(--accent);
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 2px solid var(--line);
-  border-radius: 1px;
-  padding: 12px 13px;
-  background: #fffffb;
+.contact-value {
   color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--accent);
-  outline: 2px solid rgba(0, 108, 103, 0.18);
+.contact-value:hover {
+  color: var(--accent);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.copy-status {
+  min-height: 1.4em;
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
 }
 
 .site-footer {
@@ -665,7 +676,7 @@ h3 {
   }
 
   .hero-actions .button,
-  .contact-form .button {
+  .contact-actions .button {
     width: 100%;
   }
 

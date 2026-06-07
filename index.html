@@ -237,21 +237,21 @@
             embedded systems, board-level hardware, validation, and failure analysis.
           </p>
         </div>
-        <form class="contact-form" action="mailto:DragosGianni@proton.me" method="post" enctype="text/plain">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" required>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
-          </label>
-          <button class="button" type="submit">Send Message</button>
-        </form>
+        <div class="contact-card">
+          <div>
+            <p class="contact-label">Email</p>
+            <a class="contact-value" href="mailto:DragosGianni@proton.me?subject=Portfolio%20Inquiry">DragosGianni@proton.me</a>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <a class="contact-value" href="https://www.linkedin.com/in/gianni-dragos/" target="_blank" rel="noreferrer">linkedin.com/in/gianni-dragos</a>
+          </div>
+          <div class="contact-actions">
+            <a class="button" href="mailto:DragosGianni@proton.me?subject=Portfolio%20Inquiry">Open Email</a>
+            <button class="button button-muted" type="button" data-copy-email="DragosGianni@proton.me">Copy Email</button>
+          </div>
+          <p class="copy-status" aria-live="polite"></p>
+        </div>
       </section>
     </main>
 

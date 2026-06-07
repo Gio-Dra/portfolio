@@ -16,3 +16,23 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+const copyEmailButton = document.querySelector("[data-copy-email]");
+
+if (copyEmailButton) {
+  copyEmailButton.addEventListener("click", async () => {
+    const email = copyEmailButton.getAttribute("data-copy-email");
+    const status = document.querySelector(".copy-status");
+
+    try {
+      await navigator.clipboard.writeText(email);
+      if (status) {
+        status.textContent = "Email copied.";
+      }
+    } catch {
+      if (status) {
+        status.textContent = email;
+      }
+    }
+  });
+}
