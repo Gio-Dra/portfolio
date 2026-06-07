@@ -66,10 +66,12 @@ button {
   letter-spacing: 0.01em;
 }
 
-.brand-photo {
+.site-header .brand-photo {
   display: block;
   width: 42px;
   height: 42px;
+  min-width: 42px;
+  max-width: 42px;
   border: 2px solid var(--line-strong);
   border-radius: 2px;
   object-fit: cover;
