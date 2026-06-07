@@ -552,24 +552,45 @@ h3 {
 
 .contact-section {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(300px, 0.6fr);
-  gap: clamp(24px, 5vw, 72px);
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  border-top: 2px solid var(--line-strong);
+  border-bottom: 2px solid var(--line-strong);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    var(--text);
+  background-size: 28px 28px;
+  color: #fffffb;
+}
+
+.contact-section .eyebrow {
+  color: #74c7c1;
+}
+
+.contact-section h2 {
+  max-width: 760px;
+}
+
+.contact-section p:not(.eyebrow) {
+  max-width: 760px;
+  color: rgba(255, 255, 251, 0.72);
 }
 
 .contact-card {
   display: grid;
-  gap: 18px;
-  padding: 18px;
-  border: 2px solid var(--line-strong);
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 251, 0.86);
   border-radius: 2px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  background: rgba(255, 255, 251, 0.04);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .contact-label {
   margin: 0 0 6px;
-  color: var(--accent);
+  color: #74c7c1;
   font-family: var(--mono);
   font-size: 0.72rem;
   font-weight: 800;
@@ -578,15 +599,15 @@ h3 {
 }
 
 .contact-value {
-  color: var(--text);
+  color: #fffffb;
   font-family: var(--mono);
-  font-size: 0.95rem;
+  font-size: clamp(0.88rem, 2vw, 1.05rem);
   font-weight: 800;
   overflow-wrap: anywhere;
 }
 
 .contact-value:hover {
-  color: var(--accent);
+  color: #74c7c1;
 }
 
 .site-footer {
