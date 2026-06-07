@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Option 3 - Technical Board Project Layout</title>
+    <link rel="stylesheet" href="project-layouts.css">
+  </head>
+  <body class="board">
+    <header class="option-header">
+      <a class="option-brand" href="../index.html">
+        <img src="../assets/portrait-professional.jpg" alt="Gianni Dragos">
+        <span>Gianni Dragos</span>
+      </a>
+      <nav class="option-nav">
+        <a href="option-1-casefile.html">Option 1</a>
+        <a href="option-2-labbook.html">Option 2</a>
+        <a href="option-3-board.html">Option 3</a>
+      </nav>
+    </header>
+
+    <main class="board-main">
+      <section class="board-grid">
+        <div class="board-panel hero-panel-option">
+          <div>
+            <p class="option-kicker">Option 3 / Technical Board</p>
+            <h1 class="option-title">Power + Control Architecture</h1>
+            <p class="option-copy">
+              This option is darker and more instrumentation-oriented. It works
+              best if you want the projects to feel like hardware systems rather
+              than case-study articles.
+            </p>
+          </div>
+          <div>
+            <div class="option-pillrow">
+              <span>24 V Battery Feed</span>
+              <span>Step-Down Rails</span>
+              <span>Relay Logic</span>
+              <span>Motor Drivers</span>
+            </div>
+            <div class="board-stat-grid">
+              <div class="board-stat"><b>01</b><span>Model</span></div>
+              <div class="board-stat"><b>02</b><span>Wire</span></div>
+              <div class="board-stat"><b>03</b><span>Validate</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="board-panel">
+          <figure class="board-photo">
+            <img src="../assets/pavbot-power-screenshot.jpg" alt="PAVBOT power and control diagram">
+            <figcaption class="option-caption">
+              Main electrical reference: batteries, DC conversion, Jetson supply,
+              Teensy controller, motor drivers, relays, and e-stop path.
+            </figcaption>
+          </figure>
+          <div class="board-stack">
+            <p class="option-copy">
+              The project story is presented like a system board: major signals,
+              failure states, validation artifacts, and hardware photos in one
+              compact technical view.
+            </p>
+            <a class="option-button" href="../projects/pavbot.html">Current PAVBOT Page</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="board-stack">
+        <div class="board-gallery">
+          <figure>
+            <img src="../assets/pavbot-matlab-simulation.jpg" alt="MATLAB simulation">
+            <figcaption class="option-caption">Fault timeline</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-wiring-diagram.jpg" alt="Wiring diagram">
+            <figcaption class="option-caption">Wiring map</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-motor-driver.jpg" alt="Motor driver">
+            <figcaption class="option-caption">Driver setup</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/pavbot-field.jpg" alt="PAVBOT vehicle">
+            <figcaption class="option-caption">Vehicle platform</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -13,7 +13,7 @@
   <body>
     <header class="site-header">
       <a class="brand" href="../index.html#home" aria-label="Go to home">
-        <span class="brand-mark">GD</span>
+        <img class="brand-photo" src="../assets/portrait-professional.jpg" alt="Portrait of Gianni Dragos" width="42" height="42">
         <span>Gianni Dragos</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
@@ -25,32 +25,49 @@
     </header>
 
     <main class="case-page">
-      <section class="case-hero">
-        <a class="back-link" href="../index.html#work">Back to projects</a>
-        <p class="eyebrow">Luminosity Lab / VELOS</p>
-        <h1>Variable Exploratory Lunar Observation System Probe</h1>
-        <p>
-          VELOS is a spring-launched multi-probe lunar sensor system designed
-          to deploy small sensor packages from a lander into and around
-          permanently shadowed regions for distributed environmental data
-          collection.
-        </p>
-        <div class="tag-row">
-          <span>IMU</span>
-          <span>FTP Server</span>
-          <span>Daughterboard Interface</span>
-          <span>ESP32</span>
-          <span>Mesh Networking</span>
-          <span>Testing</span>
+      <section class="case-hero case-hero-grid">
+        <div class="case-hero-copy">
+          <a class="back-link" href="../index.html#work">Back to projects</a>
+          <p class="eyebrow">Luminosity Lab / VELOS</p>
+          <h1>Variable Exploratory Lunar Observation System Probe</h1>
+          <p>
+            Lunar sensor probe electronics work focused on IMU integration and
+            a data-transfer interface for the probe daughterboard.
+          </p>
+          <div class="tag-row">
+            <span>IMU</span>
+            <span>FTP Server</span>
+            <span>Daughterboard Interface</span>
+            <span>ESP32</span>
+            <span>Mesh Networking</span>
+            <span>Testing</span>
+          </div>
         </div>
+        <figure class="case-hero-media">
+          <img src="../assets/velos-imu-close.jpg" alt="Close-up of a purple VELOS IMU daughterboard">
+          <figcaption>
+            VELOS IMU daughterboard. My work centered on inertial sensing and
+            daughterboard data access during development.
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="case-section">
-        <div>
+      <section class="case-section case-overview">
+        <aside class="case-spec" aria-label="Project details">
+          <div><b>Role</b><span>IMU integration and daughterboard interface work</span></div>
+          <div><b>System</b><span>Spring-launched lunar sensor probe</span></div>
+          <div><b>Focus</b><span>Inertial sensing, FTP server, test data access</span></div>
+          <div><b>Evidence</b><span>IMU hardware, probe CAD, prototype wiring, technical paper</span></div>
+        </aside>
+        <div class="case-copy">
           <p class="eyebrow">My work</p>
           <h2>IMU integration and data access for the probe electronics.</h2>
-        </div>
-        <div class="case-copy">
+          <ol class="case-flow">
+            <li><b>Need</b><span>The probe needed compact sensor electronics and a practical way to retrieve test data from the daughterboard.</span></li>
+            <li><b>Sense</b><span>I worked on the IMU hardware used to capture acceleration and orientation-related data.</span></li>
+            <li><b>Transfer</b><span>I developed an FTP server interface so data could be accessed during development and test workflows.</span></li>
+            <li><b>Validate</b><span>The hardware photos, CAD, and prototype wiring show how the electronics fit into the full probe system.</span></li>
+          </ol>
           <p>
             My contribution focused on the IMU portion of the probe electronics.
             I worked with the inertial measurement hardware used to capture
@@ -77,37 +94,36 @@
           <figure>
             <img src="../assets/velos-imu-close.jpg" alt="Close-up of a purple VELOS IMU daughterboard">
             <figcaption>
-              Close-up of the VELOS IMU daughterboard. This is the hardware I
-              worked with for inertial sensing and daughterboard data access.
+              My hardware focus: close-up of the VELOS IMU daughterboard used
+              for inertial sensing and daughterboard data access.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/velos-imu-scale.jpg" alt="Small VELOS IMU board on a tabletop">
             <figcaption>
-              Scale view of the compact IMU board, showing the small form factor
-              required for integration inside the probe assembly.
+              Integration constraint: scale view of the compact IMU board
+              required to fit inside the probe assembly.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/velos-cad.jpg" alt="Exploded CAD view and assembled VELOS probe">
             <figcaption>
-              Exploded CAD and assembled probe view showing how the electronics,
-              battery, structural shell, and sensor package fit into the probe.
+              System context: exploded CAD and assembled probe view showing how
+              electronics, battery, shell, and sensor package fit together.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/velos-breadboard.jpg" alt="VELOS prototype electronics wiring on a desk">
             <figcaption>
-              Prototype wiring and electronics setup used for development before
-              final integration into the spherical probe package.
+              Development step: prototype wiring and electronics setup used
+              before integration into the spherical probe package.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/velos-moon-render.jpg" alt="VELOS probe concept rendering on a lunar surface">
             <figcaption>
-              Mission concept render showing the spring-launched probe approach:
-              distributed sensor packages deployed into lunar surface regions
-              that are difficult for traditional rovers to reach.
+              Mission reason: concept render showing why small sensor probes
+              matter for lunar regions that are difficult for rovers to reach.
             </figcaption>
           </figure>
         </div>

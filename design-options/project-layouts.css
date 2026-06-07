@@ -1,0 +1,466 @@
+:root {
+  --ink: #111412;
+  --muted: #5a625d;
+  --paper: #f5f6f2;
+  --white: #fffffb;
+  --line: #141816;
+  --accent: #006c67;
+  --soft: #e7eeeb;
+  --mono: Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  --sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.48;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.option-shell {
+  min-height: 100vh;
+}
+
+.option-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px clamp(18px, 5vw, 64px);
+  border-bottom: 2px solid var(--line);
+  background: var(--white);
+}
+
+.option-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.option-brand img {
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--line);
+  object-fit: cover;
+}
+
+.option-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.option-pillrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.option-pillrow span {
+  border: 1px solid rgba(0, 108, 103, 0.35);
+  padding: 5px 8px;
+  background: var(--soft);
+  color: #004b48;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.option-kicker {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.option-title {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.03;
+}
+
+.option-copy {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.option-link {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.option-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  border: 2px solid var(--line);
+  padding: 0 14px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.option-caption {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+
+/* Option 1: Case-file layout */
+.casefile {
+  background:
+    linear-gradient(rgba(17, 20, 18, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 20, 18, 0.03) 1px, transparent 1px),
+    var(--paper);
+  background-size: 28px 28px;
+}
+
+.casefile-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: end;
+  padding: clamp(44px, 7vw, 90px) clamp(18px, 5vw, 64px);
+  border-bottom: 2px solid var(--line);
+}
+
+.casefile-media {
+  border: 2px solid var(--line);
+  background: var(--white);
+  padding: 14px;
+  box-shadow: 8px 8px 0 rgba(17, 20, 18, 0.12);
+}
+
+.casefile-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.casefile-body {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  padding: clamp(38px, 6vw, 78px) clamp(18px, 5vw, 64px);
+}
+
+.casefile-spec {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+  border: 2px solid var(--line);
+  background: var(--white);
+}
+
+.casefile-spec div {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.casefile-spec div:last-child {
+  border-bottom: 0;
+}
+
+.casefile-spec b {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.casefile-section {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 42px;
+}
+
+.casefile-flow {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.casefile-flow li {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(20, 24, 22, 0.28);
+}
+
+.casefile-flow li:last-child {
+  border-bottom: 1px solid rgba(20, 24, 22, 0.28);
+}
+
+.casefile-flow b {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.casefile-flow span {
+  color: var(--muted);
+}
+
+.casefile-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.casefile-gallery figure {
+  margin: 0;
+  border: 2px solid var(--line);
+  background: var(--white);
+}
+
+.casefile-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-bottom: 1px solid var(--line);
+  object-fit: contain;
+}
+
+.casefile-gallery figcaption {
+  padding: 12px;
+}
+
+/* Option 2: Lab notebook layout */
+.labbook {
+  background: #fbfaf4;
+}
+
+.labbook-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 64px) 18px 80px;
+}
+
+.labbook-sheet {
+  border: 2px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(0, 108, 103, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0, 108, 103, 0.05) 1px, transparent 1px),
+    var(--white);
+  background-size: 24px 24px;
+  box-shadow: 10px 10px 0 rgba(17, 20, 18, 0.12);
+}
+
+.labbook-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 28px;
+  padding: clamp(24px, 4vw, 46px);
+  border-bottom: 2px solid var(--line);
+}
+
+.labbook-note {
+  border-left: 4px solid var(--accent);
+  padding-left: 16px;
+  color: var(--muted);
+}
+
+.labbook-card {
+  border: 2px solid var(--line);
+  background: var(--white);
+}
+
+.labbook-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-bottom: 1px solid var(--line);
+  object-fit: cover;
+}
+
+.labbook-card figcaption,
+.labbook-card div {
+  padding: 12px;
+}
+
+.labbook-section {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 48px);
+  padding: clamp(24px, 4vw, 46px);
+  border-bottom: 2px solid var(--line);
+}
+
+.labbook-section:last-child {
+  border-bottom: 0;
+}
+
+.labbook-section h2 {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.labbook-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* Option 3: Technical board layout */
+.board {
+  background: #101412;
+  color: #f6f5ee;
+}
+
+.board .option-header {
+  background: #151a17;
+  border-color: rgba(246, 245, 238, 0.75);
+}
+
+.board .option-nav,
+.board .option-copy,
+.board .option-caption {
+  color: rgba(246, 245, 238, 0.68);
+}
+
+.board-main {
+  padding: clamp(36px, 6vw, 82px) clamp(18px, 5vw, 64px);
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.board-panel {
+  border: 1px solid rgba(116, 199, 193, 0.5);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(116, 199, 193, 0.13), transparent 28%),
+    #151a17;
+  padding: clamp(22px, 4vw, 42px);
+}
+
+.board-panel.hero-panel-option {
+  display: grid;
+  align-content: space-between;
+  min-height: 560px;
+}
+
+.board-photo {
+  border: 1px solid rgba(246, 245, 238, 0.65);
+  background: #0c0f0d;
+  padding: 10px;
+}
+
+.board-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.board-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.board-stat {
+  border: 1px solid rgba(116, 199, 193, 0.42);
+  padding: 12px;
+}
+
+.board-stat b {
+  display: block;
+  color: #74c7c1;
+  font-family: var(--mono);
+  font-size: 1.4rem;
+}
+
+.board-stack {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.board-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.board-gallery figure {
+  margin: 0;
+  border: 1px solid rgba(246, 245, 238, 0.45);
+  background: #151a17;
+}
+
+.board-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.board-gallery figcaption {
+  padding: 10px;
+  color: rgba(246, 245, 238, 0.68);
+}
+
+@media (max-width: 900px) {
+  .casefile-hero,
+  .casefile-body,
+  .labbook-hero,
+  .labbook-section,
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .casefile-spec {
+    position: static;
+  }
+
+  .casefile-gallery,
+  .labbook-grid,
+  .board-gallery {
+    grid-template-columns: 1fr;
+  }
+}

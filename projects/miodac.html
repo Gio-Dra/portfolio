@@ -13,7 +13,7 @@
   <body>
     <header class="site-header">
       <a class="brand" href="../index.html#home" aria-label="Go to home">
-        <span class="brand-mark">GD</span>
+        <img class="brand-photo" src="../assets/portrait-professional.jpg" alt="Portrait of Gianni Dragos" width="42" height="42">
         <span>Gianni Dragos</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
@@ -25,35 +25,53 @@
     </header>
 
     <main class="case-page">
-      <section class="case-hero">
-        <a class="back-link" href="../index.html#work">Back to projects</a>
-        <p class="eyebrow">Electronics Design Internship</p>
-        <h1>MIO-DAC20 Board + Manual</h1>
-        <p>
-          MIO-DAC20 work combined practical electronics documentation with
-          schematic cleanup, PCB review, interface documentation, and
-          board-level validation thinking for a multi-channel DAC product.
-        </p>
-        <div class="tag-row">
-          <span>Altium</span>
-          <span>DAC</span>
-          <span>PCB Review</span>
-          <span>REST API</span>
-          <span>UDP</span>
+      <section class="case-hero case-hero-grid">
+        <div class="case-hero-copy">
+          <a class="back-link" href="../index.html#work">Back to projects</a>
+          <p class="eyebrow">Electronics Design Internship</p>
+          <h1>MIO-DAC20 Board + Manual</h1>
+          <p>
+            Electronics documentation and design-support work for a multi-channel
+            DAC product, including Altium cleanup, PCB review, and interface docs.
+          </p>
+          <div class="tag-row">
+            <span>Altium</span>
+            <span>DAC</span>
+            <span>PCB Review</span>
+            <span>REST API</span>
+            <span>UDP</span>
+          </div>
         </div>
+        <figure class="case-hero-media">
+          <img src="../assets/miodac-physical.jpg" alt="Physical MIO-DAC20 circuit board">
+          <figcaption>
+            Physical MIO-DAC20 board. My work helped make the hardware files and
+            interface behavior easier to review, validate, and support.
+          </figcaption>
+        </figure>
       </section>
 
-      <section class="case-section">
-        <div>
+      <section class="case-section case-overview">
+        <aside class="case-spec" aria-label="Project details">
+          <div><b>Role</b><span>Electronics design intern</span></div>
+          <div><b>Product</b><span>MIO-DAC20 multi-channel DAC board</span></div>
+          <div><b>Focus</b><span>Altium cleanup, PCB review, interface documentation</span></div>
+          <div><b>Evidence</b><span>Board photos, layout views, user manual</span></div>
+        </aside>
+        <div class="case-copy">
           <p class="eyebrow">My work</p>
           <h2>Cleaning up hardware files and making the board supportable.</h2>
-        </div>
-        <div class="case-copy">
+          <ol class="case-flow">
+            <li><b>Need</b><span>Make a complex multi-channel DAC board easier to review, validate, document, and support.</span></li>
+            <li><b>Review</b><span>Check schematic/library cleanup items, net naming, PCB documentation details, and board presentation.</span></li>
+            <li><b>Document</b><span>Connect the physical board to connector pinouts, REST control, UDP commands, and programming examples.</span></li>
+            <li><b>Support</b><span>Leave artifacts that help engineers understand the product beyond the raw schematic and layout files.</span></li>
+          </ol>
           <p>
-          At Goebel Instrumentation Solutions, I supported the MIO-DAC20 workflow by
-          cleaning Altium schematic issues, reviewing library and net-name problems,
-          checking PCB documentation details, and helping prepare design files for
-          handoff, validation, and long-term support.
+            At Goebel Instrumentation Solutions, I supported the MIO-DAC20 workflow by
+            cleaning Altium schematic issues, reviewing library and net-name problems,
+            checking PCB documentation details, and helping prepare design files for
+            handoff, validation, and long-term support.
           </p>
           <p>
             The user manual documents board configuration, connector pinouts, HTTP REST
@@ -74,29 +92,29 @@
           <figure>
             <img src="../assets/miodac-physical.jpg" alt="Physical MIO-DAC20 circuit board">
             <figcaption>
-              Physical MIO-DAC20 board, showing the long form factor and repeated
-              channel structure that needed clear documentation and review.
+              Product context: physical MIO-DAC20 board showing the long form
+              factor and repeated channel structure that needed clear review.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/miodac-render.jpg" alt="Rendered MIO-DAC20 circuit board">
             <figcaption>
-              Rendered board view used to inspect component placement, connector
-              position, and how the circuit would be presented in documentation.
+              Presentation step: rendered board view used to inspect component
+              placement, connector position, and documentation clarity.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/miodac-layout.jpg" alt="MIO-DAC20 PCB layout view">
             <figcaption>
-              PCB layout view showing routing density and repeated signal paths,
-              useful for checking manufacturability and signal organization.
+              Review step: PCB layout view showing routing density and repeated
+              signal paths for manufacturability and signal organization checks.
             </figcaption>
           </figure>
           <figure>
             <img src="../assets/miodac-top.jpg" alt="MIO-DAC20 board top view render">
             <figcaption>
-              Top-side board visualization for confirming layout intent and
-              communicating the hardware design clearly.
+              Handoff step: top-side board visualization for confirming layout
+              intent and communicating the hardware design clearly.
             </figcaption>
           </figure>
         </div>

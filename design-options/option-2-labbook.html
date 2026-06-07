@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Option 2 - Lab Notebook Project Layout</title>
+    <link rel="stylesheet" href="project-layouts.css">
+  </head>
+  <body class="labbook">
+    <header class="option-header">
+      <a class="option-brand" href="../index.html">
+        <img src="../assets/portrait-professional.jpg" alt="Gianni Dragos">
+        <span>Gianni Dragos</span>
+      </a>
+      <nav class="option-nav">
+        <a href="option-1-casefile.html">Option 1</a>
+        <a href="option-2-labbook.html">Option 2</a>
+        <a href="option-3-board.html">Option 3</a>
+      </nav>
+    </header>
+
+    <main class="labbook-main">
+      <article class="labbook-sheet">
+        <section class="labbook-hero">
+          <div>
+            <p class="option-kicker">Option 2 / Lab Notebook</p>
+            <h1 class="option-title">PAVBOT Electrical Bring-Up</h1>
+            <p class="labbook-note">
+              This version reads more like an engineering notebook: summary,
+              analysis, validation, and artifacts. It is less flashy and more
+              documentation-forward.
+            </p>
+            <div class="option-pillrow">
+              <span>Electrical Architecture</span>
+              <span>Fault Response</span>
+              <span>Safety Circuit</span>
+            </div>
+          </div>
+          <figure class="labbook-card">
+            <img src="../assets/pavbot-matlab-simulation.jpg" alt="MATLAB simulation">
+            <figcaption class="option-caption">MATLAB simulation used to reason about electrical fault cases.</figcaption>
+          </figure>
+        </section>
+
+        <section class="labbook-section">
+          <h2>Objective</h2>
+          <div>
+            <p class="option-copy">
+              Build and validate the electrical side of an autonomous vehicle
+              platform so the robot could power up, move, stop safely, and be
+              debugged by future teams.
+            </p>
+          </div>
+        </section>
+
+        <section class="labbook-section">
+          <h2>Method</h2>
+          <div>
+            <p class="option-copy">
+              Map the power path, model fault cases, validate motor-driver
+              controls, document e-stop behavior, and tie the software/compute
+              stack back to real relay and driver hardware.
+            </p>
+          </div>
+        </section>
+
+        <section class="labbook-section">
+          <h2>Artifacts</h2>
+          <div class="labbook-grid">
+            <figure class="labbook-card">
+              <img src="../assets/pavbot-friendly-wiring.jpg" alt="E-stop wiring">
+              <figcaption class="option-caption">Simplified e-stop chain and motor power relationship.</figcaption>
+            </figure>
+            <figure class="labbook-card">
+              <img src="../assets/pavbot-pwm-logic.jpg" alt="PWM timing">
+              <figcaption class="option-caption">PWM/control timing used to validate motor command behavior.</figcaption>
+            </figure>
+            <figure class="labbook-card">
+              <img src="../assets/pavbot-demo-thumb.jpg" alt="Bench bring-up">
+              <figcaption class="option-caption">Bench-side bring-up before field testing.</figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
